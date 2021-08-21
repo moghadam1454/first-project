@@ -133,15 +133,15 @@
             <div>
               <nav class="navbar navbar-light bg-white">
                 <div class="container-fluid">
-                  <a class="navbar-brand">Navbar</a>
                   <!--start time  -->
-                  <div class="time">
+                  <div class="time rounded-3">
                     <span class="hms"></span>
                     <span class="ampm"></span>
                     <br>
                     <span class="date"></span>
                   </div>
                   <!-- end time -->
+                  <a class="navbar-brand">Navbar</a>
                 </div>
               </nav>
             </div>
@@ -155,7 +155,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="my-box shadow d-flex justify-content-center align-items-center">
                           <table class="table caption-top">
-                            <caption>List of users</caption>
+                            <caption class="text-end">List of users</caption>
                             <thead>
                               <tr>
                                 <th scope="col">#</th>
@@ -183,6 +183,30 @@
                                 <td>the Bird</td>
                                 <td>@twitter</td>
                               </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">6</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">7</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
                             </tbody>
                           </table>
                         </div>
@@ -194,7 +218,19 @@
                         <div class="my-box shadow row d-flex justify-content-center align-items-center">
                         <!-- start clock -->
                           <div class="col-12">
-
+                            <div class="clock">
+                              <div class="outer-clock-face">
+                                <div class="marking marking-one"></div>
+                                <div class="marking marking-two"></div>
+                                <div class="marking marking-three"></div>
+                                <div class="marking marking-four"></div>
+                                <div class="inner-clock-face">
+                                  <div class="hand hour-hand"></div>
+                                  <div class="hand min-hand"></div>
+                                  <div class="hand second-hand"></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         <!-- end clock -->
 
@@ -219,7 +255,7 @@
                         <div class="my-box shadow row d-flex justify-content-center align-items-center">
                             <!--start mini menu -->
                               <div class="col-12">
-                                <ul class="d-flex justify-content-center mb-lg-0 w-100 mx-0">
+                                <ul class="d-flex justify-content-center mb-lg-0 w-100 mx-0 p-0">
                                   <li class="nav-item">
                                     <a class="nav-link active d-flex flex-column" href="#">
                                       <button class="btn btn-outline-success p-0" type="submit">
@@ -284,10 +320,10 @@
                         <div class="col-lg-4 col-12">
                             <div class="row">
                               <!-- start table -->
-                                <div class="col-lg-8 col-md-6 col-12">
+                                <div class=" col-md-6 col-12">
                                     <div class="my-box shadow d-flex justify-content-center align-items-center">
                                       <table class="table caption-top">
-                                        <caption>List of users</caption>
+                                        <caption class="text-end">List of users</caption>
                                         <thead>
                                           <tr>
                                             <th scope="col">#</th>
@@ -311,6 +347,36 @@
                                             <td>Larry</td>
                                             <td>the Bird</td>
                                           </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">6</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">7</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">8</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">9</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
                                         </tbody>
                                       </table>
                                     </div>
@@ -318,73 +384,112 @@
                               <!-- end table -->
 
                               <!-- start water motor -->
-                                <div class="col-lg-4 col-md-6 col-12">
-                                <!--start pipe  -->
-                                  <div class="d-lg-flex d-none justify-content-center">
-                                    <div class="lole"></div>
+                                <div class=" col-md-6 col-12">
+                                  <div class="lole d-lg-flex d-none">
+                                    <div class="main-lole"></div>
                                   </div>
-                                <!--end pipe  -->
-
-                                <!-- start reservoir -->
-                                  <div class='rhex'></div>
-                                <!-- end reservoir-->
+                                  <div class="waterpump">
+                                      <div class="main-waterpump">
+                                          <div class="header">
+                                          </div>
+                                          <div class="skeue">
+                                            <button class="my-btn">
+                                              <input name="on" id="on" type="checkbox">
+                                              <label for="on">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 48 48" width="48pt" height="48pt"><defs><clipPath id="_clipPath_uylFJLe9hxEGL66DS4Olac0gr8TRzZLr"><rect width="48" height="48"/></clipPath></defs><g clip-path="url(#_clipPath_uylFJLe9hxEGL66DS4Olac0gr8TRzZLr)"><path d=" M 36.725 11.275 C 39.984 14.533 42 19.033 42 24 C 42 33.934 33.934 42 24 42 C 14.066 42 6 33.934 6 24 C 6 19.128 7.94 14.705 11.126 11.501" fill="none" vector-effect="non-scaling-stroke" stroke-width="6" stroke="rgb(198,60,60)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/><line x1="24" y1="24" x2="24" y2="2" vector-effect="non-scaling-stroke" stroke-width="6" stroke="rgb(198,60,60)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/></g></svg>
+                                              </label>
+                                            </button>
+                                          </div>
+                                          <div class="body"></div>
+                                      </div>
+                                  </div>
                                 </div>
-                              <!-- end water motor-->
+                              <!-- end water motor -->
                             </div>
                         </div>
                       <!-- end first pipe -->
 
                       <!-- start second pipe -->
                         <div class="col-lg-4 col-12">
-                          <div class="row">
-                            <!-- start table -->
-                              <div class="col-lg-8 col-md-6 col-12">
-                                  <div class="my-box shadow d-flex justify-content-center align-items-center">
-                                    <table class="table caption-top">
-                                      <caption>List of users</caption>
-                                      <thead>
-                                        <tr>
-                                          <th scope="col">#</th>
-                                          <th scope="col">First</th>
-                                          <th scope="col">Last</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <th scope="row">1</th>
-                                          <td>Mark</td>
-                                          <td>Otto</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">2</th>
-                                          <td>Jacob</td>
-                                          <td>Thornton</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">3</th>
-                                          <td>Larry</td>
-                                          <td>the Bird</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                              </div>
-                            <!-- end table -->
-
-                            <!-- start water motor -->
-                              <div class="col-lg-4 col-md-6 col-12">
-                              <!--start pipe  -->
-                                <div class="d-lg-flex d-none justify-content-center">
-                                  <div class="lole"></div>
+                            <div class="row">
+                              <!-- start table -->
+                                <div class=" col-md-6 col-12">
+                                    <div class="my-box shadow d-flex justify-content-center align-items-center">
+                                      <table class="table caption-top">
+                                        <caption class="text-end">List of users</caption>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">6</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">7</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">8</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">9</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
                                 </div>
-                              <!--end pipe  -->
+                              <!-- end table -->
 
-                              <!-- start reservoir -->
-                                <div class='rhex'></div>
-                              <!-- end reservoir-->
-                              </div>
-                            <!-- end water motor-->
-                          </div>
+                              <!-- start water motor -->
+                                <div class=" col-md-6 col-12">
+                                  <div class="lole d-lg-flex d-none">
+                                    <div class="main-lole"></div>
+                                  </div>
+                                  <div class="waterpump">
+                                      <div class="main-waterpump">
+                                          <div class="header"></div>
+                                          <div class="body"></div>
+                                      </div>
+                                  </div>
+                                </div>
+                              <!-- end water motor -->
+                            </div>
                         </div>
                       <!-- end second pipe -->
 
@@ -392,10 +497,10 @@
                         <div class="col-lg-4 col-12">
                           <div class="row">
                             <!-- start table -->
-                              <div class="col-lg-8 col-md-6 col-12">
+                              <div class=" col-md-6 col-12">
                                   <div class="my-box shadow d-flex justify-content-center align-items-center">
                                     <table class="table caption-top">
-                                      <caption>List of users</caption>
+                                      <caption class="text-end">List of users</caption>
                                       <thead>
                                         <tr>
                                           <th scope="col">#</th>
@@ -419,6 +524,36 @@
                                           <td>Larry</td>
                                           <td>the Bird</td>
                                         </tr>
+                                        <tr>
+                                          <th scope="row">4</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">5</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">6</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">7</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">8</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">9</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                        </tr>
                                       </tbody>
                                     </table>
                                   </div>
@@ -426,18 +561,18 @@
                             <!-- end table -->
 
                             <!-- start water motor -->
-                              <div class="col-lg-4 col-md-6 col-12">
-                              <!--start pipe  -->
-                                <div class="d-lg-flex d-none justify-content-center">
-                                  <div class="lole"></div>
+                              <div class=" col-md-6 col-12">
+                                <div class="lole d-lg-flex d-none">
+                                  <div class="main-lole"></div>
                                 </div>
-                              <!--end pipe  -->
-
-                              <!-- start reservoir -->
-                                <div class='rhex'></div>
-                              <!-- end reservoir-->
+                                <div class="waterpump">
+                                    <div class="main-waterpump">
+                                        <div class="header"></div>
+                                        <div class="body"></div>
+                                    </div>
+                                </div>
                               </div>
-                            <!-- end water motor-->
+                            <!-- end water motor -->
                           </div>
                         </div>
                       <!-- end third pipe-->
