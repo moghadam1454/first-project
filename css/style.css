@@ -1,0 +1,231 @@
+/***font family***/
+@font-face{
+  font-family: Vazir;
+  src: url(./../font/Vazir-Regular-FD.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+#wrapper{
+  width: 100%;
+  font-family: Vazir;
+  background:#dee2e6;
+  overflow-x: hidden;
+} 
+a {
+  color: unset;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  color: unset;
+  text-decoration: none;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.my-box{
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  margin: 15px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(40 ,36 ,53);
+}
+::-webkit-scrollbar-track {
+  background: #dbe2ee;
+}
+/* style for every table */
+.table{
+  font-size: 15px;
+}
+tr th{
+  font-size: 12px;
+}
+tr td{
+  font-size: 12px;
+}
+table>:not(caption)>*>* {
+  padding: .25rem .25rem !important;
+}
+/* * */
+/* style navbar menu */
+ul{
+  padding-left: 0 !important;
+}
+ul li{
+  list-style: none;
+}
+.iconApp{
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+/* * */
+/*style time part2*/
+.time {
+  background: #222;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  width: 120px;
+}
+.hms {
+  font-size: 12pt;
+  font-weight: 200;
+}
+.ampm {
+  font-size: 8pt;
+}
+.date {
+  font-size: 9pt;
+}
+/* * */
+/* part4 */
+.part4{
+    width: 100%;
+    height: 30px;
+    background: radial-gradient(circle, rgba(33,93,219,1) 0%, rgba(36,140,235,1) 100%, rgba(0,212,255,1) 100%);
+}
+/* * */
+/* part5 */
+.lole{
+    width: 15px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(33,93,219,1) 0%, rgba(36,140,235,1) 100%, rgba(0,212,255,1) 100%);
+}
+.rhex {
+  position: relative;
+  margin: 0 auto;
+  width: 10em; height: 17.32em;
+  border-radius: 1em/ .5em;
+  opacity: .25;
+  background: black;
+  transition: opacity .5s;
+  cursor: pointer;
+  font-size: 5px;
+}
+.rhex:before, .rhex:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.rhex:before {
+  transform: rotate(60deg);
+}
+.rhex:after {
+  transform: rotate(-60deg);
+  
+}
+.rhex:hover {
+  opacity: 1;
+}
+/* * */
+/* media for maximum width 991 px */
+@media (max-width: 991px){
+  .navbar-nav{
+    padding-right: 10px;
+  }
+  .lines {
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    border: 0;
+    /* top: 5px; */
+    /* font-size: 1.45rem; */
+}
+.navbar-toggler:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+.navbar-collapse.show {
+  right: 0;
+  -webkit-transition: right 0.3s linear 0s;
+  -moz-transition: right 0.3s linear 0s;
+  -ms-transition: right 0.3s linear 0s;
+  -o-transition: right 0.3s linear 0s;
+  transition: right 0.3s linear 0s;
+}
+.navbar-collapse {
+  background: gray;
+  width: 45%;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  height: 100% !important;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  -webkit-transition: right 0.3s linear 0s;
+  -moz-transition: right 0.3s linear 0s;
+  -ms-transition: right 0.3s linear 0s;
+  -o-transition: right 0.3s linear 0s;
+  transition: right 0.3s linear 0s;
+  overflow-y: scroll;
+}
+.navbar-collapse.show{
+right: 0;
+-webkit-transition: right 0.3s linear 0s;
+-moz-transition: right 0.3s linear 0s;
+-ms-transition: right 0.3s linear 0s;
+-o-transition: right 0.3s linear 0s;
+transition: right 0.3s linear 0s;
+}
+.header-navbar-collapse{
+background-color: yellow;
+}
+.close-collapse{
+top: 10px;
+left: -24px;
+bottom: 15px;
+position: absolute;
+color: white;
+background: #334782;
+border-radius: 100%;
+width: 20px;
+height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+}
+.close-collapse svg{
+width: 10px;
+}
+.logo-collapse{
+position: absolute;
+height: 90px;
+margin: 5px;
+top: 5px;
+}
+.navbar-collapse::-webkit-scrollbar {
+width: 5px;
+}
+.navbar-collapse::-webkit-scrollbar-thumb {
+background: #1f1b2d;
+}
+.navbar-collapse::-webkit-scrollbar-track {
+background: #dbe2ee;
+}
+.nav-link{
+direction: rtl;
+display: flex;
+flex-direction: row !important;
+}
+.nav-link span{
+margin: 10px 5px 0 0 ;
+}
+ }
+/* * */
